@@ -1,0 +1,26 @@
+profile:
+  adapter: postgresql
+  database: codility
+  host: localhost
+  pool: 5
+  username: codility
+  password: codility
+  encoding: utf8
+
+development:
+  adapter: postgresql
+  database: codility
+  host: localhost
+  pool: 5
+  username: codility
+  password: codility
+  encoding: utf8
+
+test:
+  adapter: postgresql
+  database: codility_test
+  host: localhost
+  pool: 5
+  username: codility_test
+  password: codility_test
+  encoding: utf8

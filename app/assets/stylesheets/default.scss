@@ -1,0 +1,40 @@
+$primary: #0288C2;
+$text-color: #555963;
+$border-color: #e2e6e9;
+
+// Errors, deletes or negativity.  Usually a shade of red.
+$negative: #DA3F48;
+
+// Warnings, possible problems or caution.  Usually a shade of orange.
+$caution: #E1951B;
+
+// Normal navigation, information or neutral actions and items.  Usually a shade of grey.
+$neutral: #434d58;
+
+// Stepping forward, saving as draft but not yet published.  Usually a shade of blue.
+$forward: #27a3dd;
+
+// Create, launch, checkout, success, etc.  Usually a shade of green.
+$positive: #61a656;
+
+$small-font: 10pt;
+
+@mixin background {
+  background: linear-gradient(to bottom, lighten($primary, 50) 0%, lighten($primary, 30) 73%);
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  padding: 20px;
+  margin: 0;
+  color: $text-color;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: $small-font;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+  @include background;
+  overflow-y: scroll;
+}
